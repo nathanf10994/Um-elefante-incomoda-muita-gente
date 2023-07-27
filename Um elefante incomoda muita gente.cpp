@@ -22,7 +22,7 @@ int main(){
 		
 		num=1;
 		
-		cout<<"\nDigite o n�mero de elefantes que deseja: ";
+		cout<<"\nDigite o número de elefantes que deseja: ";
 		cin>>contador;
 		
 		while(num<contador){
@@ -46,7 +46,7 @@ int main(){
 		}
 		
 		cout<<"\n\n\nQuer repetir a brincadeira?";
-		cout<<"\nDigite 1 para SIM, e qualquer outro n�mero para N�O: ";
+		cout<<"\nDigite 1 para SIM, e qualquer outro número para NÃO: ";
 		cin>>pg;
 	}while(pg==1);
 	
