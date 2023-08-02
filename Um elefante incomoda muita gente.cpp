@@ -25,30 +25,36 @@ int main(){
 		cout<<"\nDigite o número de elefantes que deseja: ";
 		cin>>contador;
 		
-		while(num<contador){
-			
-			cout<<"\n\n"<<num;
-			
-			if(num==1) cout<<" elefante incomoda";
-			else cout<<" elefantes incomodam";
-			
-			cout<<" muita gente."<<endl;
-			cout<<++num<<" elefantes";
-			
-			inc=0;
-			
-			while(inc<num){
-				cout<<" incomodam";
-				inc++;
+		if(contador < 2) cout<<"\n\nPoucos elefantes. \nTá leve demais pra brincar! :(";
+		if(contador > 100) cout<<"\n\nÉ muito elefante!!! \nO Código ficou pesado demais! :(";
+		else{
+		
+			while(num < contador){
+				
+				cout<<"\n\n"<<num;
+				
+				if(num == 1) cout<<" elefante incomoda";
+				else cout<<" elefantes incomodam";
+				
+				cout<<" muita gente."<<endl;
+				cout<<++num<<" elefantes";
+				
+				inc=0;
+				
+				while(inc<num){
+					cout<<" incomodam";
+					inc++;
+				}
+				
+				cout<<" muito mais! \n\n";
 			}
-			
-			cout<<" muito mais! \n\n";
 		}
 		
 		cout<<"\n\n\nQuer repetir a brincadeira?";
 		cout<<"\nDigite 1 para SIM, e qualquer outro número para NÃO: ";
 		cin>>pg;
-	}while(pg==1);
+		
+	}while(pg == 1);
 	
 	system("cls");
 	
